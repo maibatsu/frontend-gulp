@@ -6,12 +6,13 @@
     "type": "git",
     "url": "https://github.com/maibatsu/frontend-gulp"
   },
+  "author": "Andrei Orlov",
+  "license": "ISC",
   "dependencies": {
     "browser-sync": "",
     "gulp": "",
     "gulp-autoprefixer": "",
     "gulp-imagemin": "",
-    // "gulp-minify-css": "",
     "gulp-clean-css": "",
     "gulp-rigger": "",
     "gulp-sass": "",
