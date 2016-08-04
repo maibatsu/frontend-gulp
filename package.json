@@ -1,0 +1,24 @@
+{
+  "name": "frontend-gulp",
+  "version": "1.0",
+  "description": "boilerplate for html+js+css",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/maibatsu/frontend-gulp"
+  },
+  "dependencies": {
+    "browser-sync": "",
+    "gulp": "",
+    "gulp-autoprefixer": "",
+    "gulp-imagemin": "",
+    // "gulp-minify-css": "",
+    "gulp-clean-css": "",
+    "gulp-rigger": "",
+    "gulp-sass": "",
+    "gulp-sourcemaps": "",
+    "gulp-uglify": "",
+    "gulp-watch": "",
+    "imagemin-pngquant": "",
+    "rimraf": ""
+  }
+}
