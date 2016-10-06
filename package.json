@@ -1,12 +1,8 @@
 {
-  "name": "frontend-gulp",
+  "name": "project",
   "version": "1.0",
   "description": "boilerplate for html+js+css",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/maibatsu/frontend-gulp"
-  },
-  "author": "Andrei Orlov",
+  "author": "Tony Montana",
   "license": "ISC",
   "dependencies": {
     "browser-sync": "",

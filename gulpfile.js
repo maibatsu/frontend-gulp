@@ -55,14 +55,14 @@ gulp.task('clean', function (cb) {
     rimraf(path.clean, cb);
 });
 
-gulp.task('html:build', function () {
+gulp.task('build-html', function () {
     gulp.src(path.src.html)
         .pipe(rigger())
         .pipe(gulp.dest(path.build.html))
         .pipe(reload({stream: true}));
 });
 
-gulp.task('js:build', function () {
+gulp.task('build-js', function () {
     gulp.src(path.src.js)
         .pipe(rigger())
         .pipe(sourcemaps.init())
@@ -72,7 +72,7 @@ gulp.task('js:build', function () {
         .pipe(reload({stream: true}));
 });
 
-gulp.task('style:build', function () {
+gulp.task('build-style', function () {
     gulp.src(path.src.style)
         .pipe(sourcemaps.init())
         .pipe(sass())
@@ -83,7 +83,7 @@ gulp.task('style:build', function () {
         .pipe(reload({stream: true}));
 });
 
-gulp.task('image:build', function () {
+gulp.task('build-image', function () {
     gulp.src(path.src.img)
         .pipe(imagemin({
             progressive: true,
@@ -95,34 +95,34 @@ gulp.task('image:build', function () {
         .pipe(reload({stream: true}));
 });
 
-gulp.task('fonts:build', function() {
+gulp.task('build-fonts', function() {
     gulp.src(path.src.fonts)
         .pipe(gulp.dest(path.build.fonts))
 });
 
 gulp.task('build', [
-    'html:build',
-    'js:build',
-    'style:build',
-    'fonts:build',
-    'image:build'
+    'build-html',
+    'build-js',
+    'build-style',
+    'build-fonts',
+    'build-image'
 ]);
 
 gulp.task('watch', function(){
     watch([path.watch.html], function(event, cb) {
-        gulp.start('html:build');
+        gulp.start('build-html');
     });
     watch([path.watch.style], function(event, cb) {
-        gulp.start('style:build');
+        gulp.start('build-style');
     });
     watch([path.watch.js], function(event, cb) {
-        gulp.start('js:build');
+        gulp.start('build-js');
     });
     watch([path.watch.img], function(event, cb) {
-        gulp.start('image:build');
+        gulp.start('build-image');
     });
     watch([path.watch.fonts], function(event, cb) {
-        gulp.start('fonts:build');
+        gulp.start('build-fonts');
     });
 });
 
