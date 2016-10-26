@@ -39,7 +39,7 @@
 ```
 ## Getting started
 ```
-1. ~$:git clone git@github.com:maibatsu/frontend-gulp.git projectname
+1. ~$:git clone git@github.com:user/frontend-gulp.git projectname
 
 2. ~$:cd projectname
 
