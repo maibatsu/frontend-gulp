@@ -1,21 +1,29 @@
 {
-  "name": "project",
-  "version": "1.0",
-  "description": "boilerplate for html+js+css",
-  "author": "Tony Montana",
+  "name": "default",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Andrei Orlov",
   "license": "ISC",
   "dependencies": {
     "browser-sync": "",
     "gulp": "",
-    "gulp-autoprefixer": "",
+    "autoprefixer": "",
+    "cssnano": "",
+    "gulp-postcss": "",
     "gulp-imagemin": "",
-    "gulp-clean-css": "",
-    "gulp-rigger": "",
     "gulp-sass": "",
     "gulp-sourcemaps": "",
     "gulp-uglify": "",
     "gulp-watch": "",
     "imagemin-pngquant": "",
     "rimraf": ""
-  }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 3 versions"
+  ]
 }

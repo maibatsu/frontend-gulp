@@ -13,8 +13,6 @@
 
 **JavaScript:** Minify javascript files.
 
-**HTML:** Minifies html.
-
 **Web server:** BrowserSync monitors the directory defined in baseDir and whenever we edit project files, the page reloads.
 
 ## Project Structure
@@ -55,19 +53,16 @@
 ~$: gulp build
 ```
 ```
-~$: gulp buid-html
+~$: gulp buid:html
 ```
 ```
-~$: gulp buid-style
+~$: gulp buid:style
 ```
 ```
-~$: gulp buid-js
+~$: gulp buid:js
 ```
 ```
-~$: gulp buid-image
-```
-```
-~$: gulp buid-fonts
+~$: gulp buid:image
 ```
 ```
 ~$: gulp webserver
