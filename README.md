@@ -53,9 +53,6 @@
 ~$: gulp build
 ```
 ```
-~$: gulp buid:html
-```
-```
 ~$: gulp buid:style
 ```
 ```
