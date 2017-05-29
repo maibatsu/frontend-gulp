@@ -5,15 +5,17 @@
 
 ## Features
 
-**CSS:** Sourcemaps, autoprefixes css, minifies css.
+**CSS:** Sourcemaps, autoprefixes css, minifies css, normalize.
+
+**Linting & Auto-formatting CSS/SCSS:** Stylelint, Stylefmt and cssComb (sorting properties).
 
 **Images:** Optimise PNGs, JPGs, SVGs, and GIFs.
-
-**Clean:** Deletes 'build' directory.
 
 **JavaScript:** Minify javascript files.
 
 **Web server:** BrowserSync monitors the directory defined in baseDir and whenever we edit project files, the page reloads.
+
+**Clean:** Deletes 'build' directory.
 
 ## Project Structure
 ```
@@ -22,29 +24,44 @@
 |   +-- css/
 |   +-- js/
 |   +-- img/
-|   +-- fonts/
 |   +-- index.html
 +-- src/
 |   +-- sass/
 |   +-- js/
 |   +-- img/
-|   +-- fonts/
 |   +-- index.html
 +-- .gitignore
 +-- gulpfile.js
 +-- package.json
++-- .csscomb.json
++-- .stylelintrc
 +-- README.md
 ```
 ## Getting started
 ```
-1. ~$:git clone git@github.com:user/frontend-gulp.git projectname
+1. ~$:cd projectname
 
-2. ~$:cd projectname
+2. ~$:git clone https://github.com/maibatsu/frontend-gulp.git
 
 3. ~$:npm i
 ```
 
-### Gulp commands
+### Linting & Auto-formatting CSS/SCSS:
+
+```
+~$: npm run stylelint
+```
+```
+~$: npm run stylefmt
+```
+```
+~$: npm run csscomb
+```
+```
+~$: npm run prettyfy-styles
+```
+
+### Gulp commands:
 
 ```
 ~$: gulp default
@@ -70,3 +87,6 @@
 ```
 ~$: gulp watch
 ```
+
+#### TODO:
+* Add demo
