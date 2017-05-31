@@ -1,4 +1,5 @@
 # Frontend-gulp
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/maibatsu/frontend-gulp/master/LICENSE)
 
 **Required:** [Node.js](https://nodejs.org/), [NPM](https://www.npmjs.com/), [gulp.js](http://gulpjs.com/)
 
