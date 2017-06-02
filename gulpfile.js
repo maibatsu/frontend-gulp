@@ -68,11 +68,15 @@ gulp.task('build:style', () => {
   const sass         = require('gulp-sass'),
         sourcemaps   = require('gulp-sourcemaps'),
         postcss      = require('gulp-postcss'),
+        mq           = require('css-mqpacker'),
+        customVar    = require('postcss-custom-properties'),
         normalize    = require('postcss-normalize'),
         autoprefixer = require('autoprefixer'),
         cssnano      = require('cssnano'),
 
         plugins = [
+          mq(),
+          customVar(),
           normalize(),
           autoprefixer(),
           cssnano()
