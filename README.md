@@ -40,11 +40,9 @@
 ```
 ## Getting started
 ```
-1. ~$:cd projectname
+1. ~$:git clone https://github.com/maibatsu/frontend-gulp.git projectname
 
-2. ~$:git clone https://github.com/maibatsu/frontend-gulp.git
-
-3. ~$:npm i
+2. ~$:cd projectname && npm i
 ```
 
 ### Linting & Auto-formatting CSS/SCSS:
